@@ -1,0 +1,97 @@
+.firstdisplay {
+    height: 1000px;
+    /* Ставим хедеру дисплей флекс и раздвигаем элементы по углам с помощью джастифай контента */
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social {
+        padding-top: 22px; /* Отодвигаем социальные иконки что бы они соответствовали макету */
+        a {
+            padding-right: 40px;  /* - задаём иконкам отсутпы */
+            img {
+                transition: all (0.5s);
+                &:hover {
+                    scale: (1.25);
+                    transition: all (0.5s);
+                }
+            }
+        }
+        a:nth-child(6)
+        {
+            padding-right: unset; /* Убираем отступ с права для последней иконки */
+        }
+        .white { /* Добавил класс ко всем svg изображениям, и сделал отдельный ховер, для того, что бы при наведении менялся цвет иконки */
+            transition: all (0.5s);
+            &:hover {
+                transition: all (0.5s);
+                filter: invert(13%) sepia(80%) saturate(7472%) hue-rotate(2deg) brightness(107%) contrast(117%);
+            }
+        }
+    }
+    &__bottom {
+        position: absolute;
+        margin-top: 75.5%;
+        left: 45.5%;
+        width: 624px;
+        height: 369px;
+        background-image: url(../img/sidepanelbacground/bacground.svg);
+        background-repeat: no-repeat;
+        &-wrapper {
+            padding-top: 70px;
+        }
+        &-header {
+            padding-left: 70px;
+            color: #000;
+            font-family: Archangelsk;
+            font-size: 62px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &-button {
+            padding-left: 70px;
+            padding-top: 25px;
+            button {
+                outline: none;
+                display: inline-flex;
+                padding: 19px 50px;
+                align-items: center;
+                gap: 10px;
+                border: none;
+                background: #000;
+                color: #F8F200;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px; /* 166.667% */
+                transition: all (0.5s);
+                &:hover {
+                    background-color: white;
+                    color: red;
+                    transition: all (0.5s);
+                }
+            }
+        }
+    }
+    
+
+    
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */ 
+ 
+   
+    .container {
+        margin-left: 688px; /* Устанавливаем отступ слева, что бы соответствовать контейнеру, это делается из-за абсолютного позиционирования */ 
+        top: 20px;   
+        position: absolute; /* Устанавливаем абсолютное позиционирование, что бы контейнер с содержимым был поверх слайдера */  
+        z-index: 2;   /*  Добавил зиндекс контейнеру, что бы он был выше слайдера и с его содержимым можно было контактировать */ 
+    }
+  
+    .slider {
+        z-index: 1;   /* Слайдеру добавляем зиндекс ниже чем у контейнера, + растянул картнки на весь экран */
+        img {
+            object-fit: contain; 
+        }
+    }
+}
