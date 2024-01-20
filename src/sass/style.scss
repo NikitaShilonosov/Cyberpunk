@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); /* Шрифты с гугл фонт */
+@import url('libs/_bootstrap-reboot.min.scss'); /* - ребут сетки бутстрап */
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Размеры контейнера */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+/* Убираем отступ у параграфов */
+p {
+    margin-bottom: 0;
+}
+/* Делаем плавную прокрутку всего документа */
+
+html {
+    scroll-behavior: smooth;
+    }
