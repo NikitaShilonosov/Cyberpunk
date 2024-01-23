@@ -14,9 +14,25 @@
 <body>
     <section class="firstdisplay">
         <div class="slider">
-                <img src="img/sliderimg/1.jpg" alt="1">
-                <img src="img/sliderimg/2.jpg" alt="2">
-                <img src="img/sliderimg/3.jpg" alt="">
+                <img 
+                srcset="img/sliderimg/min/1.jpg 1024w ,
+                        img/sliderimg/1.jpg 1920w"     
+                sizes=" (max-width : 576px) 280px,
+                        (min-width : 577px) 1920px"
+                src="img/sliderimg/1.jpg" alt="1">
+                <img 
+                srcset="img/sliderimg/min/2.jpg 1024w ,
+                        img/sliderimg/2.jpg 1920w"
+                sizes="(max-width: 576px) 280px ,
+                        (min-width: 577px) 1920px "   
+                src="img/sliderimg/2.jpg" alt="2">
+
+                <img 
+                srcset="img/sliderimg/min/3.jpg 1024w ,
+                        img/sliderimg/3.jpg 1920w"
+                sizes="(max-width: 576px) 280px ,
+                        (min-width: 577px) 1920px "   
+                src="img/sliderimg/3.jpg" alt="3">
         </div>
         <div class="container">
             <div class="firstdisplay__header">
