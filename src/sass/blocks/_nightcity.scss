@@ -1,0 +1,133 @@
+.nightcity {
+    &__header {
+        padding-top: 70px;
+        p {
+            display: inline-block;
+            color: #000;
+            font-family: Archangelsk;
+            font-size: 62px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+    &__descr {
+        max-width: 952px;
+        color: #777;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        span {
+            font-size: 18px;
+            color: #52BEDC;
+            font-weight: 700;
+        }
+    }
+    &__img {
+        padding-top: 70px;
+        display: flex; /* задал блоку флекс для расположения элементов */
+        &-left {
+            img {
+                margin-bottom: 32px;
+            }
+        }
+        img {
+            object-fit: cover;
+        } 
+    }
+
+    /* Мобильная адаптация */
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 960px;
+        }
+        &__header {
+            width: 620px;
+            line-height: normal;
+        }
+        &__descr {
+            padding-top: 25px;
+        }
+        &__img {
+            display: unset;
+            &-left { /* Стилизую картинки слева */
+                padding-top: 70px;
+                img {
+                    padding-right: 18px;
+                }
+            }
+            &-right {
+                img {
+                    width: 952px;
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: 720px;
+        }
+        &__img {
+            &-left {
+                text-align: center;
+            }
+            &-right {
+                text-align: center;
+                img {
+                    width: 700px;
+                }
+            }
+        }
+
+    }
+    @media (max-width: 768px) {
+        .container {
+            max-width: 540px;
+        }
+        &__header {
+            width: 553px;
+        }
+        &__img {
+            &-right {
+                img {
+                    width: 500px;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .container {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        &__header {
+            width: 296px;
+            p {
+                font-size: 30px;
+            }
+        }
+        &__descr {
+            font-size: 16px;
+            span {
+                font-size: 16px;
+            }
+        }
+        picture {
+            display: block;
+            width: 100%;
+        }
+        &__img {
+            &-right {
+                img {
+                    width: 100%;
+                }
+            }
+            &-left {
+                img {
+                    width: 100%;
+                    padding-right: unset;
+                }
+            }
+        }
+    }
+}

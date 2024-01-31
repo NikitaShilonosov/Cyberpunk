@@ -9,7 +9,7 @@
 }
 /* Размеры контейнера */
 .container {
-    width: 1140px;
+    width: 1280px;
     margin: 0 auto;
 }
 /* Убираем отступ у параграфов */
@@ -25,3 +25,5 @@ html {
     }
 
 @import 'blocks/firstdisplay';
+@import 'blocks/nightcity' ;
+@import 'blocks/separation';

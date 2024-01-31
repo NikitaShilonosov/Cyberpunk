@@ -1,6 +1,5 @@
 .firstdisplay {
     position: relative;
-    height: 900px;
     /* Ставим хедеру дисплей флекс и раздвигаем элементы по углам с помощью джастифай контента */
     &__header {
         display: flex;
@@ -36,7 +35,7 @@
     &__bottom {
         display: inline-block;
         margin-top: 536.7px;
-        margin-left: 520px;
+        margin-left: 655px;
         width: 624px;
         height: 369px;
         background-image: url(../img/sidepanelbacground/bacground.svg);
