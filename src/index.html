@@ -105,7 +105,7 @@
                 <p class="playandwin__p">Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или Sony <span>Xbox Series X</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</p>
             </div>
             <form action="#" class="playandwin__form">
-                <div class="wrapper">
+                <div class="wrapper"> <!-- Создал обёртку для формы, для того что бы можно было зафлексить 2 блока, блок с картинкой и формой -->
                     <div class="playandwin__contacts">
                         <input required placeholder="Как тебя зовут?" name="name" type="text">
                     </div>
@@ -130,8 +130,16 @@
                     </div>
                 </div>
                 <div class="playandwin__image">
-                    <img class="playandwin__xbox" src="img/playandwin/xbox.png" alt="xbox">
-                    <img class="playandwin__ps5" src="img/playandwin/PS5.png" alt="PS5">
+                    <picture>
+                        <source media="(max-width: 577px)" srcset="img/playandwin/xboxmin.png">
+                        <source media="(min-width: 578px)" srcset="img/playandwin/xbox.png">
+                        <img class="playandwin__xbox" src="img/playandwin/xbox.png" alt="xbox">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 577px)" srcset="img/playandwin/PS5min.png">
+                        <source media="(min-width: 578px)" srcset="img/playandwin/PS5.png">
+                        <img class="playandwin__ps5" src="img/playandwin/PS5.png" alt="PS5">
+                    </picture>
                 </div>
             </form>
         </div>
