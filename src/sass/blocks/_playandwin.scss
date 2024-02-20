@@ -173,6 +173,9 @@
           }
     }
     &__image {
+        position: absolute;
+        right: -10%;
+        top: 9%;
         display: flex; /* Зафлексил картинки  */
     }
 
@@ -210,7 +213,7 @@
         &__image {
             position: absolute;
             flex-direction: column;
-            top: -63.2%;
+            top: -73.2%;
             right: 25px;
         }
     }
