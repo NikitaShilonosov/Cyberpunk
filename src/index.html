@@ -150,12 +150,25 @@
         <div class="container">
             <div class="diving__img">
                 <div class="diving__img-top">
-                    <img src="img/diving/hptop.png" alt="hptop">
+                    <picture>
+                        <source media="(max-width: 577px)" srcset="img/diving/hpmin.png">
+                        <source media="(max-width: 993px)" srcset="img/diving/hptopmiddle.png" >
+                        <img src="img/diving/hptop.png" alt="hptop">
+                    </picture>
                 </div>
                 <div class="diving__img-bot">
-                    <img src="icons/diving/HP.png" alt="hp">
-                    <img src="icons/diving/cross.png" alt="cross">
-                    <img src="icons/diving/cyberpunk.png" alt="cyberpunk">
+                    <picture>
+                        <source media="(max-width: 577px)" srcset="icons/diving/hpmin.png">
+                        <img src="icons/diving/HP.png" alt="hp">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 577px)" srcset="icons/diving/crossmin.png">
+                        <img src="icons/diving/cross.png" alt="cross">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 577px)" srcset="icons/diving/cyberpunkmin.png">
+                        <img src="icons/diving/cyberpunk.png" alt="cyberpunk">  
+                    </picture>
                 </div>
             </div>
             <div class="diving__info">
@@ -168,7 +181,10 @@
                 <div class="diving__wrapper">
                     <div class="diving__wrapper-items">
                         <div class="diving__wrapper-icons">
-                            <img src="icons/diving/palitra.png" alt="palitra">
+                            <picture>
+                                <source media="(max-width: 577px)" srcset="icons/diving/palitramin.png">
+                                <img src="icons/diving/palitra.png" alt="palitra">
+                            </picture>
                         </div>
                         <div class="diving__wrapper-descr">
                             Яркие насыщение цвета
@@ -176,7 +192,10 @@
                     </div>
                     <div class="diving__wrapper-items">
                         <div class="diving__wrapper-icons">
-                            <img src="icons/diving/stars.png" alt="stars">
+                            <picture>
+                                <source media="(max-width: 577px)" srcset="icons/diving/starsmin.png">
+                                <img src="icons/diving/stars.png" alt="stars">
+                            </picture>
                         </div>
                         <div class="diving__wrapper-descr">
                             Кристальная четкость изображения
@@ -184,7 +203,10 @@
                     </div>
                     <div class="diving__wrapper-items">
                         <div class="diving__wrapper-icons">
-                            <img src="icons/diving/block.png" alt="block">
+                            <picture>
+                                <source media="(max-width: 577px)" srcset="icons/diving/blockmin.png">
+                                <img src="icons/diving/block.png" alt="block">
+                            </picture>
                         </div>
                         <div class="diving__wrapper-descr">
                             Быстрые движения и плавный геймпелй
