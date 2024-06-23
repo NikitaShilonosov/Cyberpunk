@@ -1,0 +1,160 @@
+.paytoplay {
+    min-height: 717px;
+    background-color: black;
+    display: flex;
+    &__left {
+       width: 50%;
+       background-image: url('../img/paytoplay/background.jpeg');
+       background-size: cover;
+    }
+    &__right {
+        padding-top: 70px;
+        padding-left: 32px;
+    }
+    &__header {
+        width: 624px;
+        color: rgb(255, 255, 255);
+        font-family: Archangelsk;
+        font-size: 62px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    
+    &__kit {
+        padding-top: 25px;
+        &-header {
+                color: rgb(82, 190, 220);
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0%;
+                text-align: left;
+        }
+        &-item {
+            position: relative;
+            padding-top: 21px;
+            display: flex;
+            align-items: center;
+        }
+        &-descr {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding-left: 42px;
+        }
+        &-icons {
+            position: absolute;
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+    &__platform {
+        padding-top: 70px;
+        &-header {
+            color: rgb(82, 190, 220);
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        &-platform {
+            padding-top: 26px;
+            display: grid;
+            grid-template-columns: repeat(2, 81px);
+            row-gap: 55px;
+            column-gap: 81px;
+            img {
+                display: inline-block;
+            }
+        }
+    }
+
+
+    /* Мобильная адаптация */
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: 720px;
+        }
+        &__right {
+            margin-right: -200px;
+            margin-left: 10px;
+            padding-right: 10px;
+        }
+        &__header {
+            font-size: 30px;
+            width: 300px;
+            line-height: unset;
+        }
+        &__kit {
+            &-header {
+                font-size: 20px;
+            }
+            &-descr {
+                font-size: 16px;
+            }
+            &-item {
+                width: 250px;
+            }
+        }
+        &__platform {
+            &-header {
+                font-size: 20px;
+            }
+            &-platform {
+                column-gap: 50px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .container {
+            max-width: 540px;
+        }
+        flex-direction: column;
+        &__left {
+            height: 500px;
+            width: 100%;
+        }
+        &__right {
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: 576px) {
+        .container {
+            max-width: 100%;
+            padding: 0 10px;
+        }
+
+        &__kit {
+            &-item {
+                width: 265.3px;
+            }
+        }
+
+        &__right {
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-left: 12px;
+        }
+
+        &__platform {
+            &-platform {
+                column-gap: 15px;
+            }
+        }
+    }
+}
